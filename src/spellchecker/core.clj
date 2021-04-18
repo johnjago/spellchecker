@@ -9,3 +9,10 @@
 (defn correct?
   [word]
   (contains? words word))
+
+(defn -main
+  [& args]
+  (let [word (first args)]
+    (if (correct? word)
+      (println "Correct")
+      (println "Incorrect"))))
